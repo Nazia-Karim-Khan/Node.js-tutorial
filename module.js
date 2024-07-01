@@ -1,11 +1,8 @@
-const john ='john';
-const peter ='peter';
+const names = require('./name');
+console.log(names);
 
-const sayHi = (name) => {
-
-    console.log(`Hello there ${name}`);
-}
+const sayHi = require('./utils');
 
 sayHi('susan');
-sayHi(john);
-sayHi(peter);
+sayHi(names.john);
+sayHi(names.peter);
