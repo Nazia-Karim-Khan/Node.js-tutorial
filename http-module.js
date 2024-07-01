@@ -2,7 +2,9 @@ const http = require('http')
 
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
-      res.end('Welcome to our home page')
+      res.end(`<h1>
+        Welcome to our home page
+        </h1>`)
       return
     }
     if (req.url === '/about') {
